@@ -18,7 +18,7 @@ const PlayerCart = (props) => {
                     cart.map(cart =><CartAdded cart={cart}></CartAdded>)
                 }
             </ul>
-            <h4 className="total-price">TOTAL PRICE : {totalPrice}</h4> 
+            <h4 className="total-price">TOTAL PRICE : ${totalPrice}</h4> 
         </div>
     );
 };

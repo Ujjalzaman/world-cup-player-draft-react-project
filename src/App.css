@@ -1,13 +1,13 @@
-header{
+.navigation{
   display:flex;
   background-color: black;
   color:white;
   justify-content: space-between;
- 
   align-items: center;
 }
 
-.heading h1{
+
+.navigation h1{
   text-transform: uppercase;
   font-size: 1.5rem;
   padding:1px 60px;

@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import PlayerList from './playerList/PlayerList';
 import './Player.css';
 import PlayerCart from './PlayerCart/PlayerCart';
-
+import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 const Player = () => {
     const [players, setPlayer] = useState([])
     const [cart, setCart] = useState([])
@@ -12,26 +12,25 @@ const Player = () => {
         const newCart = [...cart, player];
         setCart(newCart);
     }
+    // api.mocki.io/v1/938a98f6
+    // https://api.mocki.io/v1/1812d9bb
     useEffect(()=>{
-        fetch("https://api.mocki.io/v1/1812d9bb")
+        fetch("api.mocki.io/v1/938a98f6")
           .then(res => res.json())
           .then(data => setPlayer(data))
           .catch(error => errorMessage("Something Went Wrong !! Please Try Again Leter."))
       },[]) 
 
-      
       //handle error 
       const errorMessage = (error) =>{
         const showError = document.getElementById(error);
-        // showError.innerText = error;
-        // spinnerToggle();
       }
     return (
         <div className="player-container">
             <div className="player-box">
 
                 <div className="player-heading">
-                    <h1> Available Player</h1>
+                    <h1 className="bg-success mt-3"> Available Player</h1>
                 </div>
 
                 <div className="player-list">

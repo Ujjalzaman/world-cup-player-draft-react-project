@@ -5,7 +5,7 @@ function App() {
   
   return (
     <div className="main-container">
-      <header>
+      <header className="navigation">
         <div className="heading">
           <h1> World Cup Player Auction 2020 </h1>
         </div>
