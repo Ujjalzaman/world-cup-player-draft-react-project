@@ -1,0 +1,13 @@
+.player-container{
+    display:flex;
+    justify-content: center;
+}
+.player-box{
+    width:60%;
+    border-right: 1px solid lightgray;
+}
+.player-heading{
+    text-align: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}

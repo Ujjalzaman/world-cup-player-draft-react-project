@@ -1,0 +1,8 @@
+.player-cart{
+    text-align: center;
+}
+.total-price{
+    background-color: green;
+    color:rgb(24, 23, 23);
+    padding: 5px 10px;
+}
