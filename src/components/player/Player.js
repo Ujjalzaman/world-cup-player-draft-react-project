@@ -15,7 +15,7 @@ const Player = () => {
     // api.mocki.io/v1/938a98f6
     // https://api.mocki.io/v1/1812d9bb
     useEffect(()=>{
-        fetch("api.mocki.io/v1/938a98f6")
+        fetch("https://api.mocki.io/v1/938a98f6")
           .then(res => res.json())
           .then(data => setPlayer(data))
           .catch(error => errorMessage("Something Went Wrong !! Please Try Again Leter."))
