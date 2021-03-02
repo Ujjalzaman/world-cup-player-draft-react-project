@@ -1,27 +1,35 @@
 .player-list{
-    /* margin-top: 150px; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding: 5px;
+    color:white;
 }
-.player-list img{
-    /* height: 200px; */
-    /* width: 400px; */
-}
+
 .profile-img{
     height: 120px;
-    /* width: 4px; */
+    width: 200px;
+    margin-bottom: 10px;
 }
 .player-description{
-    padding: 5px;
+    background-color: rgb(10, 119, 0);
+
+}
+.desc{
+    line-height: 5px;
+}
+.btn-handle{
+    margin:5px
 }
 button{
-    background-color: green;
+    background-color:#013f91;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 5px 10px;
+    border-radius: 20px;
     cursor: pointer;
+    color:white;
 }
 button:hover{
     background-color:orangered;
-    color:black;
+    /* color:black; */
 }

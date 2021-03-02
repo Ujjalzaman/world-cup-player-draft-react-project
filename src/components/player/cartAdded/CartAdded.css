@@ -1,18 +1,27 @@
+.player-detail{
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+}
 .player-desc{
-    display: flex;
+    display:flex;
     justify-content: center;
     justify-content: space-between;
-    align-items: center;
-    line-height: 0px;
-    border: 2px solid green; 
+    line-height: 4px;
+    background-color: #1d1283;
     margin-bottom: 10px; 
-    padding: 5px;
+    padding: 25px 40px;
+    margin-right:30px;
+    color:white;
 }
+
 .player{
-    color:#011091;
+    color:#df03df;
+    font-weight: 600;
+    font-size: 20px;
 }
 .player-image{
     width:100px;
+    height:100px;
     border-radius: 50%;
-    border: 2px solid rgb(5, 3, 161); 
+    border: 5px solid #0d28a0; 
 }

@@ -7,18 +7,22 @@ const PlayerCart = (props) => {
     for (let i = 0; i < cart.length; i++) {
         const element = cart[i];
         totalPrice = totalPrice + element.auction_price;
-        
     }
-    // const totalPrice = cart.reduce((total, prd) => total + prd.auction_price, 0)
     return (
         <div className="player-cart">
-            <h1> Total Player :  {cart.length}</h1>
-            <ul>
-                {
-                    cart.map(cart =><CartAdded cart={cart}></CartAdded>)
-                }
-            </ul>
-            <h4 className="total-price">TOTAL PRICE : ${totalPrice}</h4> 
+            <div className="cart-heading">
+                <div className="player-added">
+                    <h4> Total Player Added :  {cart.length}</h4>
+                </div>
+                <ul>
+                    {
+                        cart.map(cart => <CartAdded cart={cart}></CartAdded>)
+                    }
+                </ul>
+            </div>
+            <div className="cart-container">
+                <h5 className="total-price">TOTAL PRICE : ${totalPrice}</h5>
+            </div>
         </div>
     );
 };

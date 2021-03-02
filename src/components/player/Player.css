@@ -1,13 +1,37 @@
 .player-container{
     display:flex;
-    justify-content: center;
 }
 .player-box{
     width:60%;
+}
+.another{
+    margin-left: 50px;
     border-right: 1px solid lightgray;
 }
 .player-heading{
+    margin-top: 10px;
+    margin-right:60px ;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    font-size: 1.2rem;
+    background-color: green;
+    color:white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.player-heading h1{
+    padding: 5px 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
     text-transform: uppercase;
+}
+.player-list{
+    margin-right:30px;
+    justify-content: center;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+.player-cart{
+    /* padding-left: 70px; */
 }
